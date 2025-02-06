@@ -15,7 +15,7 @@ dofile("git/updater.lua")
 
 -- ## MESSAGGIO DI CARICAMENTO ##
 game.close()
-screen.print(5, 5, 'Loading Tubevita...'); screen.flip()
+screen.print(5, 5, 'Loading Robot Dimensions...'); screen.flip()
 splash.show("resources/tubevita.png")
 
 -- ## IMMAGINE DI SFONDO ##
@@ -27,19 +27,19 @@ while true do
 	buttons.read()
 if back then back:blit(0,0) end
 	color.loadpalette()
-screen.print(910,30,"TubeVita",1,color.white,color.blue,__ARIGHT)
+screen.print(910,30,"RobotDimensionsVita",1,color.white,color.blue,__ARIGHT)
 	screen.print(910,60,"v1.02",1,color.white,color.blue,__ARIGHT)
 
 -- ## Controlli ##
 
-screen.print(25, 40, "YouTube",1, color.red, color.black)
-screen.print(25, 65, "Playstation Channel",1, color.red, color.black)
-screen.print(25, 446, "Press X for Youtube",1, color.red, color.black)
-screen.print(25, 468, "Press Square for Playstation Channel",1, color.red, color.black)
+screen.print(25, 40, "Robot Dimensions",1, color.red, color.black)
+screen.print(25, 65, "MiguelTheDRMR Channel",1, color.red, color.black)
+screen.print(25, 446, "Press X for Robot Dimensions",1, color.red, color.black)
+screen.print(25, 468, "Press Square for MiguelTheDRMR Channel",1, color.red, color.black)
 screen.print(25, 490, "Press Triangle for Exit ",1, color.red, color.black)
 
-if buttons.cross then os.uri ("webmodal: https://www.youtube.com/?gl=IT&hl=it&app=desktop&persist_app=1&client=mv-google") end
-if buttons.square then os.uri ("webmodal: https://www.youtube.com/user/PlayStation/videos") end
+if buttons.cross then os.uri ("webmodal: https://robotdimensions.tiiny.site") end
+if buttons.square then os.uri ("webmodal: https://www.youtube.com/@miguel.dreamer/videos") end
 if buttons.triangle then os.exit() end
 screen.flip()
 end
